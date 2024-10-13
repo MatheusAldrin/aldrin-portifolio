@@ -1,0 +1,257 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: #000000;
+  color: white;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 32px 30px 36px;
+}
+
+.spotify,
+.logo,
+.menu {
+  flex: 1;
+}
+
+.spotify-widget {
+  position: fixed;
+  top: 16px;
+  right: 24px;
+  width: 300px;
+  height: 80px;
+  z-index: 9999;
+}
+
+.spotify-widget iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  text-align: left;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.logo h1 {
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  font-size: 40px;
+}
+
+.spotify {
+  text-align: left;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+
+.menu ul li {
+  margin-left: 40px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.menu a:hover {
+  color: #ddcafc;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding-top: 100px;
+}
+
+.apresentacao {
+  margin-bottom: 12vh;
+}
+
+.apresentacao p {
+  max-width: 50;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 24px;
+  color: #d2c9d4;
+}
+
+.apresentacao h2 {
+  font-size: 80px;
+  font-weight: 700;
+  padding-top: 120px;
+  line-height: 1;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    90deg,
+    #ede7f3,
+    #7b7283
+  ); /* Gradiente horizontal */
+  -webkit-background-clip: text; /* Clipa o gradiente para o texto */
+  -webkit-text-fill-color: transparent; /* Torna o texto transparente */
+  background-clip: text; /* Para compatibilidade com navegadores que não usam -webkit */
+  color: transparent; /* Faz o texto ter a cor do gradiente */
+}
+
+.perfil-conteudo {
+  text-align: center;
+  margin-bottom: 6vh;
+  z-index: 10;
+}
+
+.imagem-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 150px;
+}
+
+.imagem-container img {
+  max-width: 500px;
+  max-height: 500px;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.imagem-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(65, 65, 65, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+}
+
+.footer {
+  text-align: center;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(65, 65, 65, 0.1);
+  height: 80px;
+  list-style: none;
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  backdrop-filter: blur(3px);
+}
+
+.tools li {
+  flex: 1;
+}
+
+.tools img {
+  height: 100%;
+  max-height: 30px;
+}
+
+/* Container das estrelas */
+#stars-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh; /* Ocupa a tela inteira */
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Animação e estilo das estrelas */
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  width: 0.2vw;
+  height: 0.2vw;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Container dos meteoros */
+#meteoro-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh; /* Certifique-se de que o meteoro ocupe a tela inteira */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Certifique-se que o meteoro está acima das estrelas */
+}
+
+/* Estilo e animação dos meteoros */
+.meteoro {
+  position: absolute;
+  background: linear-gradient(white, transparent);
+  width: 1vw;
+  height: 85vh;
+  opacity: 0.8;
+  transform: rotate(45deg);
+  animation: cair 3s linear infinite;
+}
+
+@keyframes cair {
+  0% {
+    transform: translateX(0) translateY(0) rotate(135deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50vw) translateY(100vh) rotate(140deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  @keyframes cair {
+    0% {
+      transform: translateX(0) translateY(0) rotate(150deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(50vw) translateY(100vh) rotate(150deg);
+      opacity: 0;
+    }
+  }
+}
