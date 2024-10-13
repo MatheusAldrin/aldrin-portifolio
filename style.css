@@ -111,33 +111,6 @@ body {
   color: aliceblue;
 }
 
-.janela-modal {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-  z-index: 999;
-  padding-right: 32px;
-}
-
-.modal {
-  width: 60%;
-  min-width: 450px;
-  min-height: 200px;
-  background-color: rgba(65, 65, 65, 0.1);
-  /* border: 1px solid rgba(255, 255, 255, 0.2); */
-  backdrop-filter: blur(3px);
-  padding: 50px;
-  border-radius: 5px;
-}
-
-.fechar {
-  position: absolute;
-  top: -5px;
-}
-
 .perfil-conteudo {
   text-align: center;
   margin-bottom: 6vh;
@@ -181,22 +154,38 @@ body {
 
 .tools {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: rgba(65, 65, 65, 0.1);
   height: 80px;
   list-style: none;
-  /* border: 1px solid rgba(255, 255, 255, 0.2); */
   backdrop-filter: blur(3px);
+  padding: 10px 150px 10px 150px;
 }
 
 .tools li {
   flex: 1;
 }
 
-.tools img {
-  height: 100%;
-  max-height: 30px;
+.tools h2 {
+  background: linear-gradient(90deg, #e0c1ff, #a855f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.tools li img {
+  height: 30px;
+  margin-top: 10px;
+}
+
+.tools span {
+  font-size: 45px;
+  justify-content: center;
+  font-weight: 100;
+  color: #5c5c5c;
 }
 
 /* Container das estrelas */
@@ -274,5 +263,47 @@ body {
       transform: translateX(50vw) translateY(100vh) rotate(150deg);
       opacity: 0;
     }
+  }
+  .imagem-container img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .container {
+    grid-template-columns: 2fr 1fr;
+  }
+  .apresentacao h2 {
+    font-size: 3.6rem;
+  }
+  .apresentacao h3 {
+    font-size: 1.2rem;
+  }
+  .apresentacao p {
+    font-size: 0.8rem;
+    margin-top: 16px;
+  }
+  .spotify-widget {
+    top: 16px;
+    right: 24px;
+    width: 230px;
+    height: 80px;
+    z-index: 9999;
+  }
+  .perfil-conteudo {
+    padding-top: 100px;
+  }
+  .tools li img {
+    height: 20px;
+    margin-top: 10px;
+  }
+  .tools {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .tools h2 {
+    font-size: 1.2rem;
+  }
+  .footer p {
+    font-size: 0.8rem;
   }
 }
