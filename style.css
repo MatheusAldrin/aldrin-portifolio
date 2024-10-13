@@ -22,7 +22,6 @@ body {
   padding: 20px 32px 30px 36px;
 }
 
-.spotify,
 .logo,
 .menu {
   flex: 1;
@@ -53,31 +52,7 @@ body {
   display: inline-block;
   position: relative;
   margin: 0;
-  font-size: 40px;
-}
-
-.spotify {
-  text-align: left;
-}
-
-.menu ul {
-  list-style: none;
-  display: flex;
-  justify-content: end;
-}
-
-.menu ul li {
-  margin-left: 40px;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-}
-
-.menu a:hover {
-  color: #ddcafc;
+  font-size: 32px;
 }
 
 .container {
@@ -85,36 +60,82 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   margin-left: 32px;
   margin-right: 32px;
-  padding-top: 100px;
-}
-
-.apresentacao {
-  margin-bottom: 12vh;
+  padding-top: 80px;
 }
 
 .apresentacao p {
-  max-width: 50;
+  max-width: 55ch;
+  font-family: "Open Sans";
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   margin-top: 24px;
-  color: #d2c9d4;
+  font-weight: 300;
+  color: #e6e6e6;
 }
 
 .apresentacao h2 {
   font-size: 80px;
   font-weight: 700;
   padding-top: 120px;
-  line-height: 1;
+  line-height: 0.9;
   letter-spacing: 1px;
-  background: linear-gradient(
-    90deg,
-    #ede7f3,
-    #7b7283
-  ); /* Gradiente horizontal */
-  -webkit-background-clip: text; /* Clipa o gradiente para o texto */
-  -webkit-text-fill-color: transparent; /* Torna o texto transparente */
-  background-clip: text; /* Para compatibilidade com navegadores que não usam -webkit */
-  color: transparent; /* Faz o texto ter a cor do gradiente */
+  background: linear-gradient(90deg, #ede7f3, #9f9ba0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.apresentacao h3 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #d8b2ff, #631f9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 32px;
+  padding-top: 80px;
+  list-style: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.janela-modal {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  z-index: 999;
+  padding-right: 32px;
+}
+
+.modal {
+  width: 60%;
+  min-width: 450px;
+  min-height: 200px;
+  background-color: rgba(65, 65, 65, 0.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  backdrop-filter: blur(3px);
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.fechar {
+  position: absolute;
+  top: -5px;
 }
 
 .perfil-conteudo {
@@ -126,12 +147,12 @@ body {
 .imagem-container {
   position: relative;
   display: inline-block;
-  margin-top: 150px;
+  margin-top: 40px;
 }
 
 .imagem-container img {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 600px;
+  max-height: 600px;
   height: auto;
   width: auto;
   border-radius: 50%;
@@ -147,9 +168,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(65, 65, 65, 0.1);
   border-radius: 50%;
   z-index: 0;
+  background-color: rgba(65, 65, 65, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(3px);
 }
