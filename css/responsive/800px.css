@@ -10,12 +10,22 @@
     }
   }
   .imagem-container img {
-    max-width: 350px;
-    max-height: 350px;
+    height: 800px;
+    left: 80%;
+  }
+
+  .home-container {
+    padding-top: 150px;
+  }
+
+  .navbar {
+    display: none;
   }
 
   .container {
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .apresentacao h2 {
     font-size: 3.6rem;
@@ -26,6 +36,7 @@
   .apresentacao p {
     font-size: 0.8rem;
     margin-top: 16px;
+    max-width: 50ch;
   }
   .spotify {
     top: 16px;
@@ -34,9 +45,7 @@
     height: 80px;
     z-index: 9999;
   }
-  .perfil-conteudo {
-    padding-top: 100px;
-  }
+
   .tools li img {
     height: 20px;
     margin-top: 10px;

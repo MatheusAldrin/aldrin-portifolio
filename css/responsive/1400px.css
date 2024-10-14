@@ -1,0 +1,21 @@
+@media (max-width: 1400px) {
+  main {
+    padding-top: 110px;
+  }
+  .spotify {
+    max-width: 265px;
+  }
+  .apresentacao h2 {
+    font-size: 3rem;
+  }
+  .apresentacao h3 {
+    font-size: 1.2rem;
+  }
+  .apresentacao p {
+    font-size: 0.7rem;
+    margin-top: 16px;
+  }
+  .imagem-container img {
+    height: 620px;
+  }
+}

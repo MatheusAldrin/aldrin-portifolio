@@ -1,25 +1,40 @@
+.home-container {
+  flex: 1;
+  padding-top: 200px;
+}
+
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 32px;
-  margin-right: 32px;
-  padding-top: 80px;
+  align-items: center;
+  justify-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  gap: 32px;
+}
+
+.apresentacao {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
 }
 
 .apresentacao p {
-  max-width: 55ch;
+  max-width: 60ch;
   font-family: "Open Sans";
   font-size: 16px;
   letter-spacing: 1.5px;
   margin-top: 24px;
   font-weight: 300;
-  color: #e6e6e6;
+  color: #c9c9c9;
 }
 
 .apresentacao h2 {
   font-size: 80px;
   font-weight: 700;
-  padding-top: 120px;
   line-height: 0.9;
   letter-spacing: 1px;
   background: linear-gradient(90deg, #ede7f3, #9f9ba0);
@@ -40,39 +55,32 @@
   color: transparent;
 }
 
-.perfil-conteudo {
-  text-align: center;
-  margin-bottom: 6vh;
-  z-index: 10;
+.redes {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 16px;
 }
 
-.imagem-container {
+.contrato {
+  text-decoration: none;
+  color: #ede7f3;
+  padding-top: 32px;
+}
+
+.navbar {
+  grid-column: 3;
+  z-index: 10;
   position: relative;
-  display: inline-block;
-  margin-top: 40px;
 }
 
 .imagem-container img {
-  max-width: 600px;
-  max-height: 600px;
-  height: auto;
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
   width: auto;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  position: relative;
-  z-index: 1;
-}
-
-.imagem-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 50%;
-  z-index: 0;
-  background-color: rgba(65, 65, 65, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(3px);
+  height: 900px;
+  z-index: 10;
 }

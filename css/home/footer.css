@@ -1,14 +1,16 @@
 .footer {
   text-align: center;
+  padding: 1rem;
+  z-index: 10;
 }
 
 .tools {
   display: flex;
   align-items: center;
   background-color: rgba(65, 65, 65, 0.1);
+  backdrop-filter: blur(3px);
   height: 80px;
   list-style: none;
-  backdrop-filter: blur(3px);
   padding: 10px 150px 10px 150px;
 }
 

@@ -12,9 +12,13 @@
 /*  PERFIL */
 @import "./home/perfil.css";
 
+/*  NAVBAR */
+@import "./home/navbar.css";
+
 /*  FOOTER */
 @import "./home/footer.css";
 
 /*  RESPONSIVO */
+@import "./responsive/1400px.css";
 @import "./responsive/800px.css";
 @import "./responsive/600px.css";
