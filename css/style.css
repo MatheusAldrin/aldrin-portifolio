@@ -1,0 +1,20 @@
+/* RESET */
+
+@import "./reset.css";
+
+/*   BACKGROUND */
+@import "./bg.css";
+
+/*  HEADER */
+
+@import "./home/header.css";
+
+/*  PERFIL */
+@import "./home/perfil.css";
+
+/*  FOOTER */
+@import "./home/footer.css";
+
+/*  RESPONSIVO */
+@import "./responsive/800px.css";
+@import "./responsive/600px.css";

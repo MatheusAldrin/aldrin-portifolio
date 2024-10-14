@@ -1,0 +1,39 @@
+.footer {
+  text-align: center;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  background-color: rgba(65, 65, 65, 0.1);
+  height: 80px;
+  list-style: none;
+  backdrop-filter: blur(3px);
+  padding: 10px 150px 10px 150px;
+}
+
+.tools li {
+  flex: 1;
+}
+
+.tools h2 {
+  background: linear-gradient(90deg, #e0c1ff, #a855f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.tools li img {
+  height: 30px;
+  margin-top: 10px;
+}
+
+.tools span {
+  font-size: 45px;
+  justify-content: center;
+  font-weight: 100;
+  color: #5c5c5c;
+}

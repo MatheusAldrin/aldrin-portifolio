@@ -1,0 +1,54 @@
+@media (max-width: 800px) {
+  @keyframes cair {
+    0% {
+      transform: translateX(0) translateY(0) rotate(150deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(50vw) translateY(100vh) rotate(150deg);
+      opacity: 0;
+    }
+  }
+  .imagem-container img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .container {
+    grid-template-columns: 2fr 1fr;
+  }
+  .apresentacao h2 {
+    font-size: 3.6rem;
+  }
+  .apresentacao h3 {
+    font-size: 1.2rem;
+  }
+  .apresentacao p {
+    font-size: 0.8rem;
+    margin-top: 16px;
+  }
+  .spotify {
+    top: 16px;
+    right: 24px;
+    width: 230px;
+    height: 80px;
+    z-index: 9999;
+  }
+  .perfil-conteudo {
+    padding-top: 100px;
+  }
+  .tools li img {
+    height: 20px;
+    margin-top: 10px;
+  }
+  .tools {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .tools h2 {
+    font-size: 1.2rem;
+  }
+  .footer p {
+    font-size: 0.8rem;
+  }
+}

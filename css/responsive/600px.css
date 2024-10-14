@@ -1,0 +1,60 @@
+@media (max-width: 600px) {
+  @keyframes cair {
+    0% {
+      transform: translateX(0) translateY(0) rotate(160deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(50vw) translateY(100vh) rotate(170deg);
+      opacity: 0;
+    }
+  }
+  .imagem-container img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .apresentacao h2 {
+    font-size: 3rem;
+    padding-top: 0px;
+  }
+  .apresentacao h3 {
+    font-size: 1rem;
+  }
+  .apresentacao p {
+    font-size: 0.6rem;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .spotify {
+    display: none;
+  }
+  .perfil-conteudo {
+    padding-top: 0px;
+    order: 1;
+  }
+  .apresentacao {
+    order: 2;
+  }
+  .tools li img {
+    height: 15px;
+    margin-bottom: 5px;
+  }
+  .tools {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+  }
+  .tools h2 {
+    font-size: 1rem;
+  }
+  .footer p {
+    font-size: 0.6rem;
+  }
+}
