@@ -10,16 +10,18 @@
     }
   }
   .imagem-container img {
-    max-width: 250px;
-    max-height: 250px;
+    height: 600px;
   }
 
+  .home-container {
+    padding-top: 150px;
+  }
   .container {
     display: flex;
-    flex-direction: column;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+
   .apresentacao h2 {
     font-size: 3rem;
     padding-top: 0px;
@@ -35,10 +37,7 @@
   .spotify {
     display: none;
   }
-  .perfil-conteudo {
-    padding-top: 0px;
-    order: 1;
-  }
+
   .apresentacao {
     order: 2;
   }
@@ -56,5 +55,12 @@
   }
   .footer p {
     font-size: 0.6rem;
+  }
+  .apresentacao a,
+  ul li {
+    font-size: 0.7rem;
+  }
+  .contrato {
+    padding-top: 0;
   }
 }
