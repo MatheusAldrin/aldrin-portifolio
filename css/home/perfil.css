@@ -1,14 +1,14 @@
 .home-container {
   flex: 1;
-  padding-top: 200px;
+  padding-top: 250px;
 }
 
 .container {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr 0.5fr;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
   margin-left: 60px;
   margin-right: 60px;
   gap: 32px;
