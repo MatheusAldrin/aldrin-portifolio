@@ -29,7 +29,7 @@
   letter-spacing: 1.5px;
   margin-top: 24px;
   font-weight: 300;
-  color: #c9c9c9;
+  color: #ececec;
 }
 
 .apresentacao h2 {
@@ -56,11 +56,15 @@
 }
 
 .redes {
-  padding-top: 32px;
-  display: flex;
-  flex-direction: row;
   list-style: none;
-  gap: 16px;
+  padding-top: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.redes li img {
+  width: 30px;
+  height: auto;
 }
 
 .contrato {

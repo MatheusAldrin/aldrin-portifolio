@@ -7,7 +7,7 @@
 
 .open_modal_button {
   display: inline-block;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
   position: relative;
   overflow: hidden;
   z-index: 100;
@@ -18,11 +18,17 @@
   border-radius: 0.5em;
   background-color: rgba(65, 65, 65, 0);
   backdrop-filter: blur(3px);
-  border: 1px solid #3b3b3b6c;
+  border: 1px solid #9b41b673;
 }
 
 .open_modal_button:hover {
-  color: #e8dbfa;
-  border: 1px solid #b63ddba1;
-  background-color: rgba(119, 39, 156, 0.068);
+  color: #f6dbfa;
+  border: 1px solid #d95bffb7;
+  background-color: rgba(65, 17, 83, 0.315);
+}
+
+.open_modal_button:active {
+  color: #f6dbfa;
+  border: 1px solid #d95bffb7;
+  background-color: rgba(65, 17, 83, 0.315);
 }
