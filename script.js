@@ -2,7 +2,7 @@ const starsContainer = document.getElementById("stars-container");
 const container = document.getElementById("meteoro-container");
 
 function gerarEstrelas() {
-  const numEstrelas = 200;
+  const numEstrelas = 100;
 
   for (let i = 0; i < numEstrelas; i++) {
     const star = document.createElement("div");
@@ -44,7 +44,7 @@ function criarMeteoro() {
   }, 5000);
 }
 
-setInterval(criarMeteoro, 700);
+setInterval(criarMeteoro, 500);
 
 // modal
 const getElement = (query) => document.querySelector(query);
