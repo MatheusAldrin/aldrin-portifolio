@@ -15,7 +15,7 @@
   }
 
   .imagem-container img {
-    height: 500px;
+    height: 400px;
   }
 
   .home-container {
@@ -43,6 +43,8 @@
     gap: 50px;
     margin-left: 20px;
     margin-right: 16px;
+    padding-top: 30px;
+    z-index: 200;
   }
 
   .apresentacao {
@@ -59,7 +61,7 @@
   .apresentacao p {
     font-size: 0.9rem;
     margin-top: 16px;
-    max-width: 45ch;
+    max-width: 30ch;
   }
 
   .redes li img {
