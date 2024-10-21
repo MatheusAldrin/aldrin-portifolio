@@ -22,3 +22,8 @@
 @import "./responsive/1400px.css";
 @import "./responsive/800px.css";
 @import "./responsive/600px.css";
+
+/*  modals */
+@import "./modal/aboutme.css";
+@import "./modal/portifolio.css";
+@import "./modal/contact.css";

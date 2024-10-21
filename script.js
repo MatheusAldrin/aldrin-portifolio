@@ -59,3 +59,21 @@ function criarMeteoro() {
 
 // Criar meteoros a cada intervalo de 700ms
 setInterval(criarMeteoro, 700);
+
+// modal
+const getElement = (...queries) => document.querySelector(...queries);
+
+const button = getElement(".open_modal_button");
+const modalContainer = getElement(".modal_container");
+const modal = getElement(".modal");
+
+const activeModalClass = "modal_show";
+
+const openModal = () => modalContainer.classList.add(activeModalClass);
+const closeModal = () => modalContainer.classList.remove(activeModalClass);
+
+button.addEventListener("click", openModal);
+modalContainer.addEventListener("click", (event) => {
+  if (modal.contains(event.target)) return;
+  closeModal();
+});
