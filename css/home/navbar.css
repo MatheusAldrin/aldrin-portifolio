@@ -6,7 +6,9 @@
 }
 
 .open_modal_button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.3s ease-in;
   position: relative;
   overflow: hidden;
@@ -19,6 +21,8 @@
   background-color: rgba(65, 65, 65, 0);
   backdrop-filter: blur(3px);
   border: 1px solid #9b41b673;
+  width: 200px;
+  height: 60px;
 }
 
 .open_modal_button:hover {
