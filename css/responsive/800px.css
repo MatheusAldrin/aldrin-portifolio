@@ -52,12 +52,13 @@
   }
 
   .tools li img {
-    height: 20px;
+    height: 30px;
     margin-top: 10px;
   }
   .tools {
     padding-left: 80px;
     padding-right: 80px;
+    padding-bottom: 80px;
   }
   .tools h2 {
     font-size: 1.2rem;
