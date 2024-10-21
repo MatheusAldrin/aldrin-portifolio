@@ -15,9 +15,9 @@
   }
 
   .imagem-container img {
-    height: 400px;
+    height: 420px;
     z-index: 10;
-    left: 85%;
+    left: 78%;
   }
 
   .home-container {
@@ -69,6 +69,7 @@
     font-size: 0.9rem;
     margin-top: 16px;
     max-width: 30ch;
+    font-weight: 300;
   }
 
   .redes li img {
@@ -92,5 +93,10 @@
   }
   .footer p {
     font-size: 0.8rem;
+  }
+  .open_modal_button {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: rgb(226, 196, 255);
   }
 }

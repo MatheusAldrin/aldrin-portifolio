@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 34px;
-  z-index: 100;
+  z-index: 10;
+  grid-column: 3;
+  position: relative;
 }
 
 .open_modal_button {
@@ -16,7 +18,8 @@
   color: #f3f3f3;
   padding: 45px 20px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1rem;
+  font-weight: 400;
   border-radius: 0.5em;
   background-color: rgba(65, 65, 65, 0);
   backdrop-filter: blur(3px);

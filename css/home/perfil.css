@@ -30,6 +30,7 @@
   margin-top: 24px;
   font-weight: 300;
   color: #ececec;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 .apresentacao h2 {
@@ -65,18 +66,6 @@
 .redes li img {
   width: 30px;
   height: auto;
-}
-
-.contrato {
-  text-decoration: none;
-  color: #ede7f3;
-  padding-top: 32px;
-}
-
-.navbar {
-  grid-column: 3;
-  z-index: 10;
-  position: relative;
 }
 
 .imagem-container img {
