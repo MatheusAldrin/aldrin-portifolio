@@ -17,6 +17,7 @@
   .imagem-container img {
     height: 400px;
     z-index: 10;
+    left: 85%;
   }
 
   .home-container {
@@ -73,6 +74,7 @@
   .redes li img {
     width: 24px;
     height: auto;
+    gap: 30px;
   }
 
   .tools li img {
