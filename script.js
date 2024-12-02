@@ -1,12 +1,12 @@
-const starsContainer = document.getElementById("stars-container");
-const container = document.getElementById("meteoro-container");
+const starsContainer = document.getElementById('stars-container');
+const container = document.getElementById('meteoro-container');
 
 function gerarEstrelas() {
   const numEstrelas = 100;
 
   for (let i = 0; i < numEstrelas; i++) {
-    const star = document.createElement("div");
-    star.classList.add("star");
+    const star = document.createElement('div');
+    star.classList.add('star');
 
     const tamanho = Math.random() * 2 + 1;
     star.style.width = `${tamanho}px`;
@@ -28,8 +28,8 @@ function gerarEstrelas() {
 gerarEstrelas();
 
 function criarMeteoro() {
-  const meteoro = document.createElement("div");
-  meteoro.classList.add("meteoro");
+  const meteoro = document.createElement('div');
+  meteoro.classList.add('meteoro');
 
   meteoro.style.width = `${Math.random() * 2 + 1}px`;
   meteoro.style.height = `${Math.random() * 80 + 40}px`;
@@ -50,11 +50,11 @@ setInterval(criarMeteoro, 500);
 const getElement = (query) => document.querySelector(query);
 const getElements = (query) => document.querySelectorAll(query);
 
-const activeModalClass = "modal_show";
-const activeButtonClass = "active";
+const activeModalClass = 'modal_show';
+const activeButtonClass = 'active';
 
-const buttons = getElements(".open_modal_button");
-const modals = getElements(".modal_container");
+const buttons = getElements('.open_modal_button');
+const modals = getElements('.modal_container');
 
 const closeAllModals = () => {
   modals.forEach((modal) => modal.classList.remove(activeModalClass));
@@ -62,21 +62,32 @@ const closeAllModals = () => {
 };
 
 buttons.forEach((button) => {
-  button.addEventListener("click", () => {
+  button.addEventListener('click', () => {
     closeAllModals();
 
-    const modalId = button.getAttribute("data-target");
+    const modalId = button.getAttribute('data-target');
     const modalContainer = getElement(`#${modalId}`);
 
     modalContainer.classList.add(activeModalClass);
     button.classList.add(activeButtonClass);
 
-    modalContainer.addEventListener("click", (event) => {
-      const modalContent = modalContainer.querySelector(".modal");
+    modalContainer.addEventListener('click', (event) => {
+      const modalContent = modalContainer.querySelector('.modal');
       if (!modalContent.contains(event.target)) {
         modalContainer.classList.remove(activeModalClass);
         button.classList.remove(activeButtonClass);
       }
     });
   });
+});
+
+document.addEventListener('click', (e) => {
+  if (
+    !e.target.closest('.open_modal_button') &&
+    !e.target.closest('.modal_container')
+  ) {
+    document.querySelectorAll('.modal_container').forEach((modal) => {
+      modal.classList.remove('modal_show');
+    });
+  }
 });

@@ -30,7 +30,7 @@
   margin-top: 24px;
   font-weight: 300;
   color: #ececec;
-  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.856);
 }
 
 .apresentacao h2 {
@@ -76,4 +76,9 @@
   width: auto;
   height: 900px;
   z-index: 10;
+}
+
+.redes img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease;
 }

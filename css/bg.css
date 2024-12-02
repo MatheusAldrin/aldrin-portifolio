@@ -1,15 +1,14 @@
-/* Container das estrelas */
+/* estrelas */
 #stars-container {
   position: fixed;
   width: 100vw;
-  height: 100vh; /* Ocupa a tela inteira */
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: -1;
   pointer-events: none;
 }
 
-/* Animação e estilo das estrelas */
 .star {
   position: absolute;
   background: white;
@@ -31,14 +30,14 @@
   }
 }
 
-/* Container dos meteoros */
+/* meteoros */
 #meteoro-container {
   position: fixed;
   width: 100vw;
-  height: 100vh; /* Certifique-se de que o meteoro ocupe a tela inteira */
+  height: 100vh;
   top: 0;
   left: 0;
-  z-index: 1; /* Certifique-se que o meteoro está acima das estrelas */
+  z-index: 0;
 }
 
 /* Estilo e animação dos meteoros */

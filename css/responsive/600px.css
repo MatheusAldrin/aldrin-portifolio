@@ -35,12 +35,12 @@
     order: 1;
     justify-content: center;
     width: 100%;
-    height: 40px;
     padding-bottom: 0;
   }
 
   .open_modal_button {
     padding: 24px 20px;
+    height: 30px;
   }
 
   .container {

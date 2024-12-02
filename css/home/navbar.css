@@ -1,13 +1,15 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 30px;
   z-index: 10;
   grid-column: 3;
   position: relative;
 }
 
 .open_modal_button {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,8 +17,7 @@
   position: relative;
   overflow: hidden;
   z-index: 100;
-  color: #f3f3f3;
-  padding: 45px 20px;
+  color: #eeeeee;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 400;
@@ -24,18 +25,21 @@
   background-color: rgba(65, 65, 65, 0);
   backdrop-filter: blur(3px);
   border: 1px solid #9b41b673;
-  width: 200px;
-  height: 60px;
+  width: auto;
+  height: 120px;
+  padding: 0;
 }
 
 .open_modal_button:hover {
   color: #f6dbfa;
-  border: 1px solid #d95bffb7;
+  border: 1.5px solid #d95bffb7;
   background-color: rgba(65, 17, 83, 0.315);
+  /* transform: scale(1.2); */
+  font-family: "Raleway", sans-serif;
 }
 
 .open_modal_button:active {
   color: #f6dbfa;
-  border: 1px solid #d95bffb7;
+  border: 2px solid #d95bffb7;
   background-color: rgba(65, 17, 83, 0.315);
 }
