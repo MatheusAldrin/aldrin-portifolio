@@ -91,3 +91,18 @@ document.addEventListener('click', (e) => {
     });
   }
 });
+
+document.querySelectorAll('.open_modal_button').forEach((button) => {
+  button.addEventListener('click', () => {
+    const target = button.getAttribute('data-target');
+    document.getElementById(target).classList.add('show');
+  });
+});
+
+document.querySelectorAll('.modal_container').forEach((modal) => {
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('show');
+    }
+  });
+});
