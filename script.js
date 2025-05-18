@@ -76,6 +76,10 @@ buttons.forEach((button) => {
       if (!modalContent.contains(event.target)) {
         modalContainer.classList.remove(activeModalClass);
         button.classList.remove(activeButtonClass);
+
+        setTimeout(() => {
+          modalContainer.classList.remove('show');
+        }, 500);
       }
     });
   });

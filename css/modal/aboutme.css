@@ -7,26 +7,21 @@
   top: 0;
   z-index: 99;
   display: grid;
-  place-items: center;
+  place-items: end;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
-  transition: backdrop-filter 0.5s ease;
+  transition: opacity 0.3s ease, backdrop-filter 0.5s ease;
 }
 
 .modal {
   background-color: rgba(44, 23, 77, 0.397);
   backdrop-filter: blur(5px);
-  width: 90vw;
-  height: 75vh;
-  padding: 20px;
-  border-radius: 15px;
-  border: 5px solid #3b2b44;
-  box-shadow: 0 0 10px 0 #0000009c;
-
+  width: 100vw;
+  height: 50vh;
+  box-shadow: 0 0 10px 0 #000000bd;
   overflow: hidden;
-  transform: translate(100%);
-  transition: transform 0.3s ease;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
 }
 
 .modal_show {
@@ -35,5 +30,5 @@
 }
 
 .modal_show .modal {
-  transform: translate(0);
+  transform: translateY(0);
 }

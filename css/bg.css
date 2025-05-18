@@ -1,4 +1,3 @@
-/* estrelas */
 #stars-container {
   position: fixed;
   width: 100vw;
@@ -30,7 +29,6 @@
   }
 }
 
-/* meteoros */
 #meteoro-container {
   position: fixed;
   width: 100vw;
@@ -40,7 +38,6 @@
   z-index: 0;
 }
 
-/* Estilo e animação dos meteoros */
 .meteoro {
   position: absolute;
   background: linear-gradient(white, transparent);
