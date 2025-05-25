@@ -6,7 +6,7 @@
 .container {
   position: relative;
   display: grid;
-  grid-template-columns: 2fr 3fr 0.5fr;
+  grid-template-columns: 2fr 2fr 1fr;
   justify-content: center;
   align-items: center;
   margin-left: 60px;

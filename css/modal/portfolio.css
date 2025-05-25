@@ -1,5 +1,5 @@
 .modal {
-  background-color: rgba(44, 23, 77, 0.397);
+  background-color: rgba(55, 55, 56, 0.432);
   backdrop-filter: blur(5px);
   width: 100vw;
   height: 50vh;
@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-color: rgba(46, 21, 87, 0.336);
+  background-color: rgba(8, 8, 8, 0.336);
   border-radius: 5px;
   padding: 20px;
 }

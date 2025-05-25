@@ -5,13 +5,12 @@
   z-index: 10;
   grid-column: 3;
   position: relative;
+
 }
-
-
 
 .open_modal_button {
   font-family: "Raleway", sans-serif;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,12 +23,14 @@
   font-size: 1rem;
   font-weight: 400;
   border-radius: 0.5em;
-  background-color: rgba(65, 65, 65, 0);
+  background-color: rgba(230, 76, 76, 0);
   backdrop-filter: blur(3px);
   border: 1px solid #9b41b673;
-  width: auto;
-  height: 120px;
-  padding: 0;
+  /* min-width: auto; */
+  max-width: 200px;
+  height: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .open_modal_button:hover {
